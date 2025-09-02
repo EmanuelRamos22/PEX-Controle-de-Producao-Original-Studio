@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Controle de Produção de Álbuns</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Controle de Produção de Álbuns - 🟠Original Studio</h1>
+
+    <div class="card">
+      <h2>Adicionar Álbum</h2>
+
+      <div class="form-group">
+        <label for="nome">Nome do Álbum:</label>
+        <input type="text" id="nome" />
+      </div>
+
+      <div class="form-group">
+        <label for="gmail">Gmail:</label>
+        <input type="email" id="gmail" />
+      </div>
+
+      <div class="form-group">
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" />
+      </div>
+
+      <div class="form-group">
+        <label for="diagramador">Diagramador:</label>
+        <select id="diagramador">
+          <option value="">Selecione</option>
+          <option value="Marcos">Marcos</option>
+          <option value="Otoniel">Otoniel</option>
+          <option value="Gabi">Gabi</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="turma">Turma:</label>
+        <input type="text" id="turma" />
+      </div>
+
+      <div class="form-group">
+        <label for="pacote">Pacote:</label>
+        <select id="pacote">
+          <option value="">Selecione</option>
+          <option>Ipa</option>
+          <option>Double IPA</option>
+          <option>Double Bock</option>
+          <option>Imperial IPA</option>
+          <option>Weiss</option>
+          <option>Barley Wine</option>
+          <option>Pilsen</option>
+          <option>Tripel</option>
+          <option>Tripel Tela Avulsa</option>
+          <option>Stout</option>
+          <option>Old Ale</option>
+          <option>Pale</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="status">Status:</label>
+        <select id="status">
+          <option value="">Selecione</option>
+          <option>Não iniciado</option>
+          <option>Enviado para o Formando</option>
+          <option>Aprovado</option>
+          <option>Alteração</option>
+          <option>Alteração Enviada</option>
+          <option>Enviar para Emanuel</option>
+          <option>Enviado para emanuel</option>
+          <option>Gráfica</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="dataDrive">Data Drive:</label>
+        <input type="date" id="dataDrive" />
+      </div>
+
+      <div class="form-group">
+        <label for="obsDiagramador">Obs Diagramador:</label>
+        <textarea id="obsDiagramador" rows="2"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="obsEmanuel">Obs Emanuel:</label>
+        <textarea id="obsEmanuel" rows="2"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="dataEnvioDiagramador"
+          >Data de envio para o diagramador:</label
+        >
+        <input type="date" id="dataEnvioDiagramador" />
+      </div>
+
+      <div class="form-group">
+        <label for="dataEnviadoGrafica">Data enviado para a gráfica:</label>
+        <input type="date" id="dataEnviadoGrafica" />
+      </div>
+
+      <div class="form-group checkbox-group">
+        <label>
+          <input type="checkbox" id="financeiro" />
+          Financeiro (Pago)
+        </label>
+      </div>
+
+      <button id="btnAdicionar">Adicionar Álbum</button>
+    </div>
+
+    <div class="card">
+      <h2>Importar Álbuns via CSV</h2>
+      <input type="file" id="inputCsv" accept=".csv" />
+      <small>
+        Escolha um arquivo CSV com as colunas corretas:<br />
+        nome, gmail, número, diagramador, turma, pacote, status, dataDrive,
+        obsDiagramador, obsEmanuel, dataEnvioDiagramador, dataEnviadoGrafica,
+        financeiro
+      </small>
+    </div>
+
+    <div id="lista-albuns" class="lista-albuns"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
