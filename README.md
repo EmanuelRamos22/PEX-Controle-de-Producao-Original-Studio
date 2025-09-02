@@ -20,8 +20,13 @@ O sistema permite organizar turmas, diagramadores, pacotes de álbuns, status de
 
 ---
 
+## 🖼 Interface do Sistema
+![Preview](https://github.com/user-attachments/assets/d7525c81-4d12-4876-8c66-20f5df014f35)
+
+
+---
+
 ## 🛠 Tecnologias Utilizadas
 - 🌐 **HTML**: Estrutura das páginas.  
 - 🎨 **CSS**: Estilização da interface.  
 - ⚡ **JavaScript**: Lógica de interação e manipulação de dados.
-
